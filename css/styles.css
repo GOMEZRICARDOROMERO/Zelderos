@@ -1,0 +1,485 @@
+/* reseteo de css para elimiar los bordes */
+*{
+	margin: 0px;
+	padding: 0px;
+    box-sizing: border-box; /* con esta propiedad hago que las cajas conserven su tamaño si se les da un padding o border */
+}
+/* reseteo de css para elimiar los bordes */
+
+/* -----------------------------General todas las paginas--------------------------------------- */
+
+body{
+    background-color: rgba(128, 128, 128, 0.342);/* color de fondo principal */
+}
+
+.header__links  {
+    background-color: #1d1d1b; /* color de fondo de toda la barra de navegacion */
+    display: flex; /* lo paso a flexbox */
+    align-items: center; /* alineo en flexbox */
+    justify-content: center; /* centro el contenido en flexbox */
+    padding: 1%; /* hago un padding general de 1%  */
+}
+
+.header__links li{
+    list-style: none; /* retiro los puntos de decoracion de cada li*/
+}
+
+.header__menu{
+    margin-left: 2%; /* separo en 2% solo los li del menu "home, juegos, manga y media */
+}
+
+.header__links a{
+    text-decoration: none; /* retito el estilo de link "color y subraya" */
+    color: white; /* le doy color al texto */
+    font-size: larger; /* tamaño texto */
+}
+
+
+.header__links p{
+    font-size: 250%; /* tamaño unico para zelderos */
+    color: white; /* le doy color al texto */
+    
+}
+
+.header__logo{ /* modifico tamaño del logo */
+    width: 50%; /* ancho de su tamaño original*/
+}
+
+
+h1{
+    font-family: 'Abril Fatface', cursive; /* utilizo el font de google */
+    text-align: center; /* centro el texto */
+    margin: 2%; /* le doy  un margin para separar de la barra y de la imagen */
+}
+
+
+footer{
+    background-color: #1d1d1b; /* color de fondo del footer */
+    padding-top: 3%; /* borde interno de top */
+    padding-bottom: 3%; /* borde interno de bot */
+    margin-top: 1%; /* separo siempre 1% el footer del contenido de arriba */
+    margin-bottom: 0%;
+}
+
+.footer__p{
+    font-size: medium; /* le doy un tamaño pequeño */
+    color: white; /* cambio el color del texto */
+    text-align: center; /* centro el texto */
+}
+
+/* -----------------------------General todas las paginas--------------------------------------- */
+
+/* -----------------------------------------Index----------------------------------------------- */
+
+.principal{
+    display: flex; /* paso la section principal a */
+    justify-content: center; /* centro la imagen */
+}
+
+.principal__cuadro{
+    width:  100%;
+    height: 600px;
+    margin: 1% 8% 1% 8%;
+    border-radius: 16px; /* borde redondo */
+    border: 3px solid rgb(17, 131, 74); /* borde de color */
+}
+
+.principal__img1{
+    background-image: url("https://zizihub.com/f38c59.gif");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+/* -----------------------------------------Index----------------------------------------------- */
+
+/* -----------------------------------------Juegos---------------------------------------------- */
+
+.imagenes{
+    display: flex; /* paso toda la section de imagenes a felx */
+    justify-content: space-around; /* ajusto el contenido con espacios iguales entre ellos*/
+    flex-wrap: wrap; /* dejo fluir en varias lineas los divs dependiendo el ancho de la pantalla */
+}
+
+.imagnes__card{ /* es el diseño de la tarjeta */
+    display: flex; /* paso todos los articulos a flex */
+    flex-direction: column; /* los paso a vertical */
+    width: 400px; /* ancho */
+    height: 450px; /* alto */
+    border-radius: 16px; /* borde redondo */
+    border: 3px solid rgb(17, 131, 74); /* borde de color */
+    margin: 1%;
+}
+
+.imagenes__cuadro{ /* es el tamaño que se va usar para la imagen */
+    width: 100%; /* ocupa el 100% de ancho */
+    height: 250px; /* 250px de alto */
+    border-top-left-radius:  13px 13px; /* hago redondo el borde arriba izquierda para coincidir con el de article */
+    border-top-right-radius: 13px 13px; /* hago redondo el borde arriba derecha para coincidir con el de article */
+}
+
+.imagenes__textos{ /* son los textos dentro de la tarjeta */
+    text-align: justify; /* centro el texto */
+    line-height: 1.2;/* separo los renglones */
+    margin: 3%; /* separo en todos los lados 1% */
+}
+
+h2{ /* titulo dentro de la tarjeta */
+    text-align: center; /* centro el titulo del juego */
+    margin-bottom: 2%; /* separo un 2 el titulo del texto */
+}
+
+.imagenes__img1{ /* imagen que va dentro de imagenes__cuadro */
+    background-image: url("https://i.3djuegos.com/juegos/5271/the_legend_of_zelda__a_link_to_the_past/fotos/ficha/the_legend_of_zelda__a_link_to_the_past-1698112.webp"); /* paso la url de la imagen */
+    background-repeat: no-repeat; /* hago que la imagen no se repita */
+    background-size: 100% 100%; /* la imagen se ajusta al 100% del tamaño del div */
+    
+}
+
+.imagenes__img2{
+    background-image: url("https://static.wikia.nocookie.net/nintendo/images/2/25/The_Legend_of_Zelda_Wind_Waker_Portada.png/revision/latest?cb=20130728161032&path-prefix=es");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    
+}
+
+.imagenes__img3{
+    background-image: url("https://http2.mlstatic.com/D_NQ_NP_829858-MLM41816411724_052020-O.webp");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.imagenes__img4{
+    background-image: url("");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+
+}
+
+.imagenes__img5{
+    background-image: url("");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.imagenes__img6{
+    background-image: url("");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.imagenes__img7{
+    background-image: url("");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.imagenes__img8{
+    background-image: url("");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.imagenes__img9{
+    background-image: url("");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.imagenes__img10{
+    background-image: url("");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.imagenes__img11{
+    background-image: url("");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.imagenes__img12{
+    background-image: url("");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+/* -----------------------------------------Juegos---------------------------------------------- */
+
+/* -----------------------------------------Manga----------------------------------------------- */
+
+.mangas{
+    display: grid; /* agrego el grid */
+    width: 100%; /* le indico al grid que use el 100 de la vista horizontal */
+    height: 100%; /* le indico al grid que use el 100 de la vista vertical */
+    grid-template-columns: 1fr 1fr;/* es el tamaño que ocupara cada columna en el template en fr*/
+    grid-template-rows: 1fr 1fr 1fr; /* es el tamaño que ocupara cada fila en el template en fr */
+    grid-template-areas:"manga1 manga2" 
+                        "manga3 manga4"
+                        "manga5 manga6";/* defino el area que ocupara en 3 filas row con"" y 2 columnas col con los nombres*/
+}
+
+.manga1{/* asigno manga1 a su espacio definido en template-areas */
+    grid-area: manga1;
+    justify-self: center; /* centro la card dentro de su columna */
+}
+
+.manga2{
+    grid-area: manga2;
+    justify-self: center;
+}
+
+.manga3{
+    grid-area: manga3;
+    justify-self: center;
+}
+
+.manga4{
+    grid-area: manga4;
+    justify-self: center;
+}
+
+.manga5{
+    grid-area: manga5;
+    justify-self: center;
+}
+
+.manga6{
+    grid-area: manga6;
+    justify-self: center;
+}
+
+.mangas__card{ /* es el diseño de la tarjeta */
+    display: flex; /* paso todos los articulos a flex */
+    width: 600px; /* ancho */
+    height: 450px; /* alto */
+    border-radius: 16px; /* borde redondo */
+    border: 3px solid rgb(17, 131, 74); /* borde de color */
+    margin: 1%;
+}
+
+.mangas_cuadro{ /* es el tamaño que se va usar para la imagen */
+    width: 50%; /* ocupa el 50% de ancho de la card*/
+    height: 100%; /* 250px de alto */
+    border-top-left-radius:  13px 13px; /* hago redondo el borde arriba izquierda para coincidir con el de article */
+    border-bottom-left-radius: 13px 13px; /* hago redondo el borde abajo izquierda para coincidir con el de article */
+}
+
+.mangas__textos{ /* son los textos dentro de la tarjeta */
+    width: 50%; /* ocupa el 50% de ancho de la card */
+    text-align: justify; /* centro el texto */
+    line-height: 1.2;/* separo los renglones */
+    margin: 3%; /* separo en todos los lados 1% */
+}
+
+.mangas__img1{
+    background-image: url("https://www.normaeditorial.com/upload/media/albumes/0001/06/a6fe1c73bab320c08220271140f955d7ac719d33.jpeg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.mangas__img2{
+    background-image: url("https://cdn.normacomics.com/media/catalog/product/cache/1/image/588x473/9df78eab33525d08d6e5fb8d27136e95/l/e/legend_zelda_perfect_editio.jpg"); 
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.mangas__img3{
+    background-image: url("https://cdn.normacomics.com/media/catalog/product/cache/1/image/588x473/9df78eab33525d08d6e5fb8d27136e95/0/1/01237000101_g.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.mangas__img4{
+    background-image: url("");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.mangas__img5{
+    background-image: url("");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.mangas__img6{
+    background-image: url("");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+/* -----------------------------------------Manga----------------------------------------------- */
+
+/* -----------------------------------------Media----------------------------------------------- */
+
+.iframes iframe{
+    margin: 10px;/* separo los iframes entre si x10px */
+    border-radius: 16px; /* borde redondo */
+    border: 3px solid rgb(17, 131, 74); /* borde de color */
+
+}
+
+/* -----------------------------------------Media----------------------------------------------- */
+
+/* -----------------------------------------Contacto-------------------------------------------- */
+
+.formulario{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.formulario__contenedor{
+    padding: 10px; /* relleno de 10px */
+    background-color: #1d1d1b;
+    width: 310px;  /* ancho */
+    height: 400px; /* alto */
+    border-radius: 16px; /* borde redondo */
+    border: 3px solid rgb(17, 131, 74); /* borde de color */
+    margin: 5% auto; /* centro */
+    color: white; /* color del texto */
+    font-size: larger; /* tamaño texto */
+}
+
+textarea {
+    resize: none; /* impido que el usuario extienda el textarea */
+    width: 100% /* ocupa el 100% de ancho */
+}
+
+input{
+    width: 100%; /* dejo que use el 100% del ancho */
+}
+
+.formulario__boton{
+    width: 50%;  /* le doy un tamaño de 50% */
+    display: block; /* paso a bloque para centrar */
+    margin: 4% auto; /* centro */
+}
+
+.formulario__contenedor div{
+    margin: 8px 0px;
+}
+
+/* -----------------------------------------Contacto--------------------------------------------- */
+
+/* -----------------------------------------Media Queries---------------------------------------- */
+
+/* en los media se agrega todas las propiedades que se van a cambiar */
+
+/* Mobile */
+@media (min-width: 320px) and (max-width: 575px){
+    /*---------------------nav----------------- */
+    .header__links  {
+        flex-direction: column;
+        padding: 1%;
+        width: 100%;
+    }
+    
+    .header__links li{
+        list-style: none;
+        padding-top: 1%;
+        padding-bottom: 1%; 
+    }
+    
+    .header__menu{
+        margin-left: 0%; 
+    }
+    
+    .header__links a{
+        text-decoration: none; 
+        color: white; 
+        font-size: larger; 
+    }
+    
+    .header__links p{
+        font-size: 250%; 
+        color: white; 
+        
+    }
+    
+    .header__logo{ 
+        width: 100%;
+    }
+    
+    h1{
+        margin: 0%;
+        width: 100%;
+    }
+    
+    /*---------------------nav----------------- */
+    
+    /*-------------------index----------------- */
+    .principal{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; 
+    }
+    
+    .principal__cuadro{
+        width:  98%;
+        height: 300px;
+        margin: 5% 1% 5% 1%;
+    }
+    
+    /*-------------------index----------------- */
+    
+    /*-------------------mangas---------------- */
+    .mangas{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas:"manga1" 
+                            "manga2" 
+                            "manga3" 
+                            "manga4"
+                            "manga5" 
+                            "manga6";
+        row-gap: 0.5%;
+        margin: 0 0 25% 0;
+    }
+    
+    .mangas__card{ 
+        width: 98%; 
+    }
+    /*-------------------mangas---------------- */
+}
+
+
+/* Tablet */
+@media (min-width: 576px) and (max-width: 992px){
+    /*---------------------nav----------------- */
+    .header__links p{
+        font-size: 200%; 
+        color: white; 
+        
+    }
+    
+    .header__logo{ 
+        width: 50%;
+    }
+    
+    h1{
+        margin: 0%;
+        width: 100%;
+    }
+    
+    /*---------------------nav----------------- */
+    
+    /*-------------------mangas---------------- */
+    .mangas{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas:"manga1" 
+                            "manga2" 
+                            "manga3" 
+                            "manga4"
+                            "manga5" 
+                            "manga6";
+        row-gap: 0.5%;
+        margin: 0 0 15% 0;
+    }
+    
+    .mangas__card{ 
+        width: 98%; 
+    }
+    /*-------------------mangas---------------- */
+}
+/* -----------------------------------------Media Queries---------------------------------------- */
