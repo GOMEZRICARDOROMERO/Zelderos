@@ -28,6 +28,11 @@ body{
     margin-left: 2%; /* separo en 2% solo los li del menu "home, juegos, manga y media */
 }
 
+.header__menu:hover{/* aplico animaciones a los bonotes de navegacion */
+    transform: scale(1.10,1.10);
+    transition: all 0.05s;
+}
+
 .header__links a{
     text-decoration: none; /* retito el estilo de link "color y subraya" */
     color: white; /* le doy color al texto */
@@ -47,9 +52,10 @@ body{
 
 
 h1{
-    font-family: 'Abril Fatface', cursive; /* utilizo el font de google */
+    font-family: 'Ibarra Real Nova', serif; /* utilizo el font de google */
     text-align: center; /* centro el texto */
     margin: 2%; /* le doy  un margin para separar de la barra y de la imagen */
+    text-shadow: 0px 0px 2px black; /* agrego sombra al texto */
 }
 
 
@@ -353,6 +359,12 @@ input{
     width: 50%;  /* le doy un tamaño de 50% */
     display: block; /* paso a bloque para centrar */
     margin: 4% auto; /* centro */
+    border-radius: 5px; /* redondeo un poco */
+}
+
+.formulario__boton:hover{ /* aplico un tranform y trnsition a los botones del form */
+    transform: scale(1.10,1.10);/* hago escala a 1.10 de su tamaño original */
+    transition: all 0.1s;
 }
 
 .formulario__contenedor div{
@@ -441,7 +453,6 @@ input{
     }
     /*-------------------mangas---------------- */
 }
-
 
 /* Tablet */
 @media (min-width: 576px) and (max-width: 992px){
