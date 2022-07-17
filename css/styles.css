@@ -50,39 +50,39 @@ body{
     width: 50%; /* ancho de su tamaño original*/
 }
 
-/* boostrap */
+/* bootstrap */
 .header__logoimg{
     margin-left: 23%;
     margin-right: 4%;
     
 }
 
-.header__logo-boostrap{
+.header__logo--bootstrap{
     width: 20%; /* lo separo del titulo zelderos */
     margin: 0 0 0 1px; /* ancho de su tamaño original*/
 }
 
-.header__nav-boostrap{
+.header__nav--bootstrap{
     background-color: #1d1d1b; /* color de fondo de toda la barra de navegacion */
     padding: 1%; /* hago un padding general de 1%  */
 }
 
-.header__menu-boostrap{
+.header__menu--bootstrap{
     margin: 0 0 0 9.5%; /* separo en 2% solo los li del menu "home, juegos, manga y media */
 }
 
-.header__menu-boostrap:hover{
+.header__menu--bootstrap:hover{
     transform: scale(1.10,1.10);
     transition: all 0.05s;
 }
 
-.footer__boostrap{
+.footer__bootstrap{
     font-size: large;
     color: white;
     margin-top: 2%;
 }
 
-/* boostrap */
+/* bootstrap */
 
 .main__h1{
     font-family: 'Ibarra Real Nova', serif; /* utilizo el font de google */
@@ -129,24 +129,23 @@ footer{
     background-size: 100% 100%;
 }
 
-/* boostrap */
-.boostrap__carrousel{ /* carrousel */
+/* bootstrap */
+.bootstrap__carrousel{ /* carrousel */
     margin: 1% 8% 1% 8%; /* le doy un margin de 1% para que no ocupe todo el ancho */
     border-radius: 16px; /* borde redondo */
     border: 3px solid #1d1d1b; /* borde de color */
 }
 
-.boostrap__img{ /* imagenes dentro del carrousel */
+.bootstrap__img{ /* imagenes dentro del carrousel */
     border-radius: 13px; /* borde redondo */
 }
 
-.boostrap__arrow{/* hago mas grande las flechas de seleccion*/
+.bootstrap__arrow{/* hago mas grande las flechas de seleccion*/
     width: 150px;
     height: 150px; 
 }
 
-
-/* boostrap */
+/* bootstrap */
 
 /* -----------------------------------------Index----------------------------------------------- */
 
