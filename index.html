@@ -20,6 +20,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
     <!-- Google fonts -->
     
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <!-- bootstrap -->
+    
     <!-- Css -->
     <link rel="stylesheet" href="css/styles.css">
     <!-- Css -->
@@ -29,47 +33,87 @@
 
 <!-- HEADER -->
     <header> 
-        <nav class="header__navegacion"> <!-- navegacion -->
-            <ul class="header__links"> <!-- lista desordenada -->
-                <li>
-                    <p>ZELDEROS</p> <!-- titulo/logo -->
-                </li>
-                <li>
-                    <img class="header__logo" src="resources/hylian-shield2.png" alt="escudo-hylian"> <!-- logo del titulo/logo -->
-                </li>
-                <li class="header__menu"> 
-                    <a href="#">Home</a> <!-- links a otras paginas del proyecto -->
-                </li>
-                <li class="header__menu">
-                    <a href="pages/juegos.html">Juegos</a> <!-- links a otras paginas del proyecto -->
-                </li>
-                <li class="header__menu">
-                    <a href="pages/manga.html">Manga</a> <!-- links a otras paginas del proyecto -->
-                </li>
-                <li class="header__menu">
-                    <a href="pages/media.html">Media</a> <!-- links a otras paginas del proyecto -->
-                </li>
-                <li class="header__menu">
-                    <a href="pages/contacto.html">Contacto</a> <!-- links a otras paginas del proyecto -->
-                </li>
-            </ul>
+        <!-- boostrap -->
+        <nav class="navbar navbar-expand-lg header__nav-boostrap">
+            <div class="container-fluid ">
+                <div class="header__logoimg">
+                    <p class="header__p ">ZELDEROS <img class="header__logo-boostrap " src="resources/hylian-shield2.png" alt="escudo-hylian"></p> <!-- titulo/logo -->
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse " id="navbarNav">
+                    <ul class="header__links">
+                        <li class="header__menu-boostrap">
+                            <a href="#">Home</a>
+                        </li>
+                        <li class="header__menu-boostrap">
+                            <a  href="pages/juegos.html">Juegos</a>
+                        </li>
+                        <li class="header__menu-boostrap">
+                            <a href="pages/manga.html">Manga</a>
+                        </li>
+                        <li class="header__menu-boostrap">
+                            <a  href="pages/media.html">Media</a>
+                        </li>
+                        <li class="header__menu-boostrap">
+                            <a href="pages/contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
+        <!-- boostrap -->
     </header> 
 <!-- HEADER -->
 
 <!-- MAIN -->
     <main>
-        <h1>THE LEGEND OF ZELDA WIKI</h1> <!-- quiero que a futuro este titulo quede en el centro de la imagen -->
-        <section class="principal"> <!-- seccion principal, la imagen ocupara toda la pantalla de inicio -->
-            <div class="principal__cuadro principal__img1"></div><!-- imagen -->
-        </section><!-- seccion principal, la imagen ocupara toda la pantalla de inicio -->
+        <h1 class="main__h1">THE LEGEND OF ZELDA WIKI</h1> <!-- quiero que a futuro este titulo quede en el centro de la imagen -->
+        <section class="boostrap__carrousel"> <!-- section boostrap -->
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="https://zizihub.com/065a98.png" class="d-block w-100 boostrap__img" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://zizihub.com/485661.jpg" class="d-block w-100 boostrap__img" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://zizihub.com/dcce40.jpg" class="d-block w-100 boostrap__img" alt="...">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon boostrap__arrow" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                    <span class="carousel-control-next-icon boostrap__arrow" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </section>
     </main> 
 <!-- MAIN -->
 
 <!-- FOOTER -->
     <footer> 
-        <p class="footer__p">Todos los derechos reservados 2022</p> 
+        <!-- boostrap -->
+        <div class="d-flex align-items-center justify-content-center footer__boostrap">
+            <p class="footer__p-boostrap ">Todos los derechos reservados 2022</p>
+        </div>
+        <!-- boostrap -->
     </footer> 
 <!-- FOOTER -->
+
+<!-- javascrip bootstrap -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+<!-- javascrip bootstrap -->
+
 </body>
 </html>

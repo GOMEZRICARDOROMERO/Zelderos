@@ -40,7 +40,7 @@ body{
 }
 
 
-.header__links p{
+.header__p{
     font-size: 250%; /* tamaño unico para zelderos */
     color: white; /* le doy color al texto */
     
@@ -50,8 +50,41 @@ body{
     width: 50%; /* ancho de su tamaño original*/
 }
 
+/* boostrap */
+.header__logoimg{
+    margin-left: 23%;
+    margin-right: 4%;
+    
+}
 
-h1{
+.header__logo-boostrap{
+    width: 20%; /* lo separo del titulo zelderos */
+    margin: 0 0 0 1px; /* ancho de su tamaño original*/
+}
+
+.header__nav-boostrap{
+    background-color: #1d1d1b; /* color de fondo de toda la barra de navegacion */
+    padding: 1%; /* hago un padding general de 1%  */
+}
+
+.header__menu-boostrap{
+    margin: 0 0 0 9.5%; /* separo en 2% solo los li del menu "home, juegos, manga y media */
+}
+
+.header__menu-boostrap:hover{
+    transform: scale(1.10,1.10);
+    transition: all 0.05s;
+}
+
+.footer__boostrap{
+    font-size: large;
+    color: white;
+    margin-top: 2%;
+}
+
+/* boostrap */
+
+.main__h1{
     font-family: 'Ibarra Real Nova', serif; /* utilizo el font de google */
     text-align: center; /* centro el texto */
     margin: 2%; /* le doy  un margin para separar de la barra y de la imagen */
@@ -61,9 +94,9 @@ h1{
 
 footer{
     background-color: #1d1d1b; /* color de fondo del footer */
-    padding-top: 3%; /* borde interno de top */
+    padding-top: 2%; /* borde interno de top */
     padding-bottom: 3%; /* borde interno de bot */
-    margin-top: 1%; /* separo siempre 1% el footer del contenido de arriba */
+    margin-top: 5%; /* separo siempre 1% el footer del contenido de arriba */
     margin-bottom: 0%;
 }
 
@@ -95,6 +128,25 @@ footer{
     background-repeat: no-repeat;
     background-size: 100% 100%;
 }
+
+/* boostrap */
+.boostrap__carrousel{ /* carrousel */
+    margin: 1% 8% 1% 8%; /* le doy un margin de 1% para que no ocupe todo el ancho */
+    border-radius: 16px; /* borde redondo */
+    border: 3px solid #1d1d1b; /* borde de color */
+}
+
+.boostrap__img{ /* imagenes dentro del carrousel */
+    border-radius: 13px; /* borde redondo */
+}
+
+.boostrap__arrow{/* hago mas grande las flechas de seleccion*/
+    width: 150px;
+    height: 150px; 
+}
+
+
+/* boostrap */
 
 /* -----------------------------------------Index----------------------------------------------- */
 
@@ -338,7 +390,7 @@ h2{ /* titulo dentro de la tarjeta */
     padding: 10px; /* relleno de 10px */
     background-color: #1d1d1b;
     width: 310px;  /* ancho */
-    height: 400px; /* alto */
+    height: 450px; /* alto */
     border-radius: 16px; /* borde redondo */
     border: 3px solid rgb(17, 131, 74); /* borde de color */
     margin: 5% auto; /* centro */
@@ -346,17 +398,17 @@ h2{ /* titulo dentro de la tarjeta */
     font-size: larger; /* tamaño texto */
 }
 
-textarea {
+.formulario__texarea {
     resize: none; /* impido que el usuario extienda el textarea */
     width: 100% /* ocupa el 100% de ancho */
 }
 
-input{
+.formulario__input{
     width: 100%; /* dejo que use el 100% del ancho */
 }
 
 .formulario__boton{
-    width: 50%;  /* le doy un tamaño de 50% */
+    width: 47%;  /* le doy un tamaño de 50% */
     display: block; /* paso a bloque para centrar */
     margin: 4% auto; /* centro */
     border-radius: 5px; /* redondeo un poco */

@@ -20,6 +20,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
     <!-- Google fonts -->
     
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <!-- bootstrap -->
+    
     <!-- Css -->
     <link rel="stylesheet" href="../css/styles.css">
     <!-- Css -->
@@ -28,59 +32,65 @@
 <body> 
 
 <!-- HEADER -->
-    <header> 
-        <nav class="header__navegacion">
-            <ul class="header__links">
-                <li>
-                    <p>ZELDEROS</p> <!-- titulo/logo -->
-                </li>
-                <li>
-                    <img class="header__logo" src="../resources/hylian-shield2.png" alt="escudo-hylian"> <!-- logo del titulo/logo -->
-                </li>
-                <li class="header__menu">
-                    <a href="../index.html">Home</a>
-                </li>
-                <li class="header__menu"> 
-                    <a href="juegos.html"> Juegos</a>
-                </li>
-                <li class="header__menu">
-                    <a href="manga.html"> Manga</a>
-                </li>
-                <li class="header__menu">
-                    <a href="media.html"> Media</a>
-                </li>
-                <li class="header__menu">
-                    <a href="#"> Contacto</a>
-                </li>
-            </ul>
+    <header>
+        <!-- boostrap -->
+        <nav class="navbar navbar-expand-lg header__nav-boostrap">
+            <div class="container-fluid ">
+                <div class="header__logoimg">
+                    <p class="header__p ">ZELDEROS <img class="header__logo-boostrap " src="../resources/hylian-shield2.png" alt="escudo-hylian"></p> <!-- titulo/logo -->
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse " id="navbarNav">
+                    <ul class="header__links">
+                        <li class="header__menu-boostrap">
+                            <a href="../index.html">Home</a>
+                        </li>
+                        <li class="header__menu-boostrap">
+                            <a  href="juegos.html">Juegos</a>
+                        </li>
+                        <li class="header__menu-boostrap">
+                            <a href="manga.html">Manga</a>
+                        </li>
+                        <li class="header__menu-boostrap">
+                            <a  href="media.html">Media</a>
+                        </li>
+                        <li class="header__menu-boostrap">
+                            <a href="#">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
+        <!-- boostrap -->
     </header> 
 <!-- HEADER -->
 
 <!-- MAIN -->
     <main> 
-        <h1>Envia tus Cometarios</h1>
+        <h1 class="main__h1">Envia tus Cometarios</h1>
         <section class="formulario"> <!-- form -->
         <form method="post">
             <div class="formulario__contenedor">
                 <div>
                     <label>Nombre:</label><!-- muestra la palabra antes del input -->
-                    <input placeholder="Tu Nombre"> <!-- son campos para escribir como nombre email etc -->
+                    <input class="formulario__input" placeholder="Tu Nombre"> <!-- son campos para escribir como nombre email etc -->
                 </div>
                 
                 <div>
                     <label>Email:</label>
-                    <input type="email" placeholder="Tu correo"> 
+                    <input class="formulario__input" type="email" placeholder="Tu correo"> 
                 </div>
                 
                 <div>
                     <label>Comentario:</label>
-                    <textarea rows="10" cols="21" placeholder="Tu comentario"></textarea> <!-- rows filas cols columnas -->
+                    <textarea class="formulario__texarea" rows="5" cols="5" placeholder="Tu comentario"></textarea> <!-- rows filas cols columnas -->
                 </div>
                 
                 <div>
-                    <input class="formulario__boton" type="reset" value="Borrar"> <!-- resetea lo escrito -->
-                    <input class="formulario__boton" type="submit" value="Enviar"> <!-- enviar y se guarda en una variable particular -->
+                    <input class="formulario__boton formulario__input" type="reset" value="Borrar"> <!-- resetea lo escrito -->
+                    <input class="formulario__boton formulario__input" type="submit" value="Enviar"> <!-- enviar y se guarda en una variable particular -->
                 </div>
             </div>
         </form>
@@ -89,9 +99,18 @@
 <!-- MAIN -->
 
 <!-- FOOTER -->
-    <footer>
-        <p class="footer__p">Todos los derechos reservados 2022</p> 
-    </footer>
+    <footer> 
+        <!-- boostrap -->
+        <div class="d-flex align-items-center justify-content-center footer__boostrap">
+            <p class="footer__p-boostrap ">Todos los derechos reservados 2022</p>
+        </div>
+        <!-- boostrap -->
+    </footer> 
 <!-- FOOTER -->
+
+<!-- javascrip bootstrap -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+<!-- javascrip bootstrap -->
+
 </body>
 </html>
