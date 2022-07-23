@@ -37,13 +37,40 @@ body {
   transform: scale(1.1, 1.1);
   transition: all 0.05s; }
 
-.header__links a {
+a {
+  color: #63635e;
   text-decoration: none;
   /* retito el estilo de link "color y subraya" */
-  color: white;
-  /* le doy color al texto */
   font-size: larger;
   /* tamaño texto */ }
+
+.active {
+  color: white; }
+
+.activehm::after {
+  /* mantengo activa la linea de abajo en los links */
+  content: " ";
+  display: block;
+  width: 52px;
+  height: 6px;
+  position: absolute;
+  border-bottom: 3px solid white; }
+
+.activejuma::after {
+  content: " ";
+  display: block;
+  width: 60px;
+  height: 6px;
+  position: absolute;
+  border-bottom: 3px solid white; }
+
+.activec::after {
+  content: " ";
+  display: block;
+  width: 80px;
+  height: 6px;
+  position: absolute;
+  border-bottom: 3px solid white; }
 
 .header__p {
   font-size: 250%;
@@ -78,8 +105,32 @@ body {
   /* separo en 2% solo los li del menu "home, juegos, manga y media */ }
 
 .header__menu--bootstrap:hover {
+  /* animacion de zoom a la letra */
   transform: scale(1.1, 1.1);
   transition: all 0.05s; }
+
+.header__menu--bootstrap a:hover {
+  /* hago que se pongo la letra en blanco cuando se pasa el cursor */
+  color: white; }
+
+.header__menu--bootstrap a::before {
+  /* hago una liea abajo de los links */
+  content: " ";
+  /* siempre debe tener un content */
+  width: 0%;
+  /* dejo en 0 para que no se vea */
+  border-bottom: 3px solid white;
+  /* el borde abajo reprsenta a linea */ }
+
+.header__menu--bootstrap a:hover::before {
+  /* animo la linea al pasar el cursor*/
+  content: " ";
+  width: 100%;
+  /* ocupara el 100% de largo */
+  position: absolute;
+  top: 32px;
+  border-bottom: 3px solid white;
+  transition: all 0.5s; }
 
 .footer__bootstrap {
   font-size: large;
@@ -466,7 +517,6 @@ h2 {
     margin-left: 0%; }
   .header__links a {
     text-decoration: none;
-    color: white;
     font-size: larger; }
   .header__links p {
     font-size: 250%;
