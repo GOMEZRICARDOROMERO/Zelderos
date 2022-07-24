@@ -140,7 +140,6 @@ a{
     text-shadow: 0px 0px 2px black; /* agrego sombra al texto */
 }
 
-
 footer{
     background-color: #1d1d1b; /* color de fondo del footer */
     padding-top: 2%; /* borde interno de top */
@@ -511,11 +510,6 @@ h2{ /* titulo dentro de la tarjeta */
         width: 100%;
     }
     
-    h1{
-        margin: 0%;
-        width: 100%;
-    }
-    
     /* bootstrap */
     .header__logoimg{
         margin-left: 5%;
@@ -601,11 +595,6 @@ h2{ /* titulo dentro de la tarjeta */
     
     .header__logo{ 
         width: 50%;
-    }
-    
-    h1{
-        margin: 0%;
-        width: 100%;
     }
     
     .main__h1{
