@@ -211,7 +211,7 @@ footer{
     width: 400px; /* ancho */
     height: 450px; /* alto */
     border-radius: 16px; /* borde redondo */
-    border: 3px solid rgb(17, 131, 74); /* borde de color */
+    border: 3px solid #1d1d1b;; /* borde de color */
     margin: 1%;
 }
 
@@ -233,77 +233,118 @@ h2{ /* titulo dentro de la tarjeta */
     margin-bottom: 2%; /* separo un 2 el titulo del texto */
 }
 
-.imagenes__img1{ /* imagen que va dentro de imagenes__cuadro */
-    background-image: url("https://i.3djuegos.com/juegos/5271/the_legend_of_zelda__a_link_to_the_past/fotos/ficha/the_legend_of_zelda__a_link_to_the_past-1698112.webp"); /* paso la url de la imagen */
+.imagenes__img1{ /* imagen que va dentro de imagenes__cuadro Skyward Sword*/
+    background-image: url("https://zizihub.com/3a8f90.jpg"); /* paso la url de la imagen */
     background-repeat: no-repeat; /* hago que la imagen no se repita */
     background-size: 100% 100%; /* la imagen se ajusta al 100% del tamaño del div */
-    
 }
 
-.imagenes__img2{
-    background-image: url("https://i.3djuegos.com/juegos/5271/the_legend_of_zelda__a_link_to_the_past/fotos/ficha/the_legend_of_zelda__a_link_to_the_past-1698112.webp");
+.imagenes__img2{/* Minish Cap */
+    background-image: url("https://zizihub.com/1cbe94.jpg");
     background-repeat: no-repeat;
     background-size: 100% 100%;
     
 }
 
-.imagenes__img3{
-    background-image: url("https://http2.mlstatic.com/D_NQ_NP_829858-MLM41816411724_052020-O.webp");
+.imagenes__img3{/* Four Swords */
+    background-image: url("https://zizihub.com/0f5243.jpg");
     background-repeat: no-repeat;
     background-size: 100% 100%;
 }
 
-.imagenes__img4{
-    background-image: url("https://i.3djuegos.com/juegos/5271/the_legend_of_zelda__a_link_to_the_past/fotos/ficha/the_legend_of_zelda__a_link_to_the_past-1698112.webp");
+.imagenes__img4{/* Ocarine of Time */
+    background-image: url("https://zizihub.com/eb6034.jpg");
     background-repeat: no-repeat;
     background-size: 100% 100%;
 
 }
 
-.imagenes__img5{
-    background-image: url("https://i.3djuegos.com/juegos/5271/the_legend_of_zelda__a_link_to_the_past/fotos/ficha/the_legend_of_zelda__a_link_to_the_past-1698112.webp");
+.imagenes__img5{/* Majora's Mask */
+    background-image: url("https://zizihub.com/c66b98.jpg");
     background-repeat: no-repeat;
     background-size: 100% 100%;
 }
 
-.imagenes__img6{
-    background-image: url("https://i.3djuegos.com/juegos/5271/the_legend_of_zelda__a_link_to_the_past/fotos/ficha/the_legend_of_zelda__a_link_to_the_past-1698112.webp");
+.imagenes__img6{/* Twilight Princess */
+    background-image: url("https://zizihub.com/c52b67.jpg");
     background-repeat: no-repeat;
     background-size: 100% 100%;
 }
 
-.imagenes__img7{
-    background-image: url("https://i.3djuegos.com/juegos/5271/the_legend_of_zelda__a_link_to_the_past/fotos/ficha/the_legend_of_zelda__a_link_to_the_past-1698112.webp");
+.imagenes__img7{/*Four Swords Adventures */
+    background-image: url("https://zizihub.com/07d846.jpg");
     background-repeat: no-repeat;
     background-size: 100% 100%;
 }
 
-.imagenes__img8{
-    background-image: url("https://i.3djuegos.com/juegos/5271/the_legend_of_zelda__a_link_to_the_past/fotos/ficha/the_legend_of_zelda__a_link_to_the_past-1698112.webp");
+.imagenes__img8{/* The Wind Waker */
+    background-image: url("https://zizihub.com/f89268.jpg");
     background-repeat: no-repeat;
     background-size: 100% 100%;
 }
 
-.imagenes__img9{
-    background-image: url("https://i.3djuegos.com/juegos/5271/the_legend_of_zelda__a_link_to_the_past/fotos/ficha/the_legend_of_zelda__a_link_to_the_past-1698112.webp");
+.imagenes__img9{/* The Phantom Hourglass */
+    background-image: url("https://zizihub.com/eeb981.jpg");
     background-repeat: no-repeat;
     background-size: 100% 100%;
 }
 
-.imagenes__img10{
-    background-image: url("https://i.3djuegos.com/juegos/5271/the_legend_of_zelda__a_link_to_the_past/fotos/ficha/the_legend_of_zelda__a_link_to_the_past-1698112.webp");
+.imagenes__img10{/* Spirit Tracks */
+    background-image: url("https://zizihub.com/d6ae42.jpg");
     background-repeat: no-repeat;
     background-size: 100% 100%;
 }
 
-.imagenes__img11{
-    background-image: url("https://i.3djuegos.com/juegos/5271/the_legend_of_zelda__a_link_to_the_past/fotos/ficha/the_legend_of_zelda__a_link_to_the_past-1698112.webp");
+.imagenes__img11{/* A Link to the Past */
+    background-image: url("https://zizihub.com/7dec12.jpg");
     background-repeat: no-repeat;
     background-size: 100% 100%;
 }
 
-.imagenes__img12{
-    background-image: url("https://i.3djuegos.com/juegos/5271/the_legend_of_zelda__a_link_to_the_past/fotos/ficha/the_legend_of_zelda__a_link_to_the_past-1698112.webp");
+.imagenes__img12{/* Oracle of Season */
+    background-image: url("https://zizihub.com/0cfb1.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.imagenes__img13{/* Oracle of Ages */
+    background-image: url("https://zizihub.com/d29335.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.imagenes__img14{/* Link's Awakening */
+    background-image: url("https://zizihub.com/555c39.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.imagenes__img15{/* A Link Between Worlds */
+    background-image: url("https://zizihub.com/053983.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.imagenes__img16{/* Tri-Force Heroes */
+    background-image: url("https://zizihub.com/94ba25.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.imagenes__img17{/* The Legend of Zelda */
+    background-image: url("https://zizihub.com/376020.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.imagenes__img18{/* Adventure of Link */
+    background-image: url("https://zizihub.com/908a22.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.imagenes__img19{/* Breath of the Wild */
+    background-image: url("https://zizihub.com/5dea7.jpg");
     background-repeat: no-repeat;
     background-size: 100% 100%;
 }
