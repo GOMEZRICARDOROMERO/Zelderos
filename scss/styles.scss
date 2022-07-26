@@ -7,7 +7,6 @@
 /* reseteo de css para elimiar los bordes */
 
 /* -----------------------------General todas las paginas--------------------------------------- */
-
 body{
     background-color: rgba(128, 128, 128, 0.342);/* color de fondo principal */
 }
@@ -132,7 +131,6 @@ a{
 }
 
 /* bootstrap */
-
 .main__h1{
     font-family: 'Ibarra Real Nova', serif; /* utilizo el font de google */
     text-align: center; /* centro el texto */
@@ -157,7 +155,6 @@ footer{
 /* -----------------------------General todas las paginas--------------------------------------- */
 
 /* -----------------------------------------Index----------------------------------------------- */
-
 .principal{
     display: flex; /* paso la section principal a */
     justify-content: center; /* centro la imagen */
@@ -194,11 +191,9 @@ footer{
 }
 
 /* bootstrap */
-
 /* -----------------------------------------Index----------------------------------------------- */
 
 /* -----------------------------------------Juegos---------------------------------------------- */
-
 .imagenes{
     display: flex; /* paso toda la section de imagenes a felx */
     justify-content: space-around; /* ajusto el contenido con espacios iguales entre ellos*/
@@ -352,7 +347,6 @@ h2{ /* titulo dentro de la tarjeta */
 /* -----------------------------------------Juegos---------------------------------------------- */
 
 /* -----------------------------------------Manga----------------------------------------------- */
-
 .mangas{
     display: grid; /* agrego el grid */
     width: 100%; /* le indico al grid que use el 100 de la vista horizontal */
@@ -456,7 +450,6 @@ h2{ /* titulo dentro de la tarjeta */
 /* -----------------------------------------Manga----------------------------------------------- */
 
 /* -----------------------------------------Media----------------------------------------------- */
-
 .iframes iframe{
     margin: 10px;/* separo los iframes entre si x10px */
     border-radius: 16px; /* borde redondo */
@@ -467,7 +460,6 @@ h2{ /* titulo dentro de la tarjeta */
 /* -----------------------------------------Media----------------------------------------------- */
 
 /* -----------------------------------------Contacto-------------------------------------------- */
-
 .formulario{
     display: flex;
     justify-content: center;
