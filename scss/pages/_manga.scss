@@ -1,0 +1,100 @@
+.mangas{
+    display: grid; /* agrego el grid */
+    width: 100%; /* le indico al grid que use el 100 de la vista horizontal */
+    height: 100%; /* le indico al grid que use el 100 de la vista vertical */
+    grid-template-columns: 1fr 1fr;/* es el tamaño que ocupara cada columna en el template en fr*/
+    grid-template-rows: 1fr 1fr 1fr; /* es el tamaño que ocupara cada fila en el template en fr */
+    grid-template-areas:"manga1 manga2" 
+                        "manga3 manga4"
+                        "manga5 manga6";/* defino el area que ocupara en 3 filas row con"" y 2 columnas col con los nombres*/
+    
+    .manga1{/* asigno manga1 a su espacio definido en template-areas */
+        grid-area: manga1;
+        justify-self: center; /* centro la card dentro de su columna */
+    }
+    
+    .manga2{
+        grid-area: manga2;
+        justify-self: center;
+    }
+    
+    .manga3{
+        grid-area: manga3;
+        justify-self: center;
+    }
+    
+    .manga4{
+        grid-area: manga4;
+        justify-self: center;
+    }
+    
+    .manga5{
+        grid-area: manga5;
+        justify-self: center;
+    }
+    
+    .manga6{
+        grid-area: manga6;
+        justify-self: center;
+    }
+    
+    &__card{ /* es el diseño de la tarjeta */
+        display: flex; /* paso todos los articulos a flex */
+        width: 600px; /* ancho */
+        height: 450px; /* alto */
+        border-radius: 16px; /* borde redondo */
+        border: 3px solid rgb(17, 131, 74); /* borde de color */
+        margin: 1%;
+    }
+    
+    &_cuadro{ /* es el tamaño que se va usar para la imagen */
+        width: 50%; /* ocupa el 50% de ancho de la card*/
+        height: 100%; /* 250px de alto */
+        border-top-left-radius:  13px 13px; /* hago redondo el borde arriba izquierda para coincidir con el de article */
+        border-bottom-left-radius: 13px 13px; /* hago redondo el borde abajo izquierda para coincidir con el de article */
+    }
+    
+    &__textos{ /* son los textos dentro de la tarjeta */
+        width: 50%; /* ocupa el 50% de ancho de la card */
+        text-align: justify; /* centro el texto */
+        line-height: 1.2;/* separo los renglones */
+        margin: 3%; /* separo en todos los lados 1% */
+    }
+    
+    &__img1{
+        background-image: url("https://www.normaeditorial.com/upload/media/albumes/0001/06/a6fe1c73bab320c08220271140f955d7ac719d33.jpeg");
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+    }
+    
+    &__img2{
+        background-image: url("https://cdn.normacomics.com/media/catalog/product/cache/1/image/588x473/9df78eab33525d08d6e5fb8d27136e95/l/e/legend_zelda_perfect_editio.jpg"); 
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+    }
+    
+    &__img3{
+        background-image: url("https://cdn.normacomics.com/media/catalog/product/cache/1/image/588x473/9df78eab33525d08d6e5fb8d27136e95/0/1/01237000101_g.jpg");
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+    }
+    
+    &__img4{
+        background-image: url("");
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+    }
+    
+    &__img5{
+        background-image: url("");
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+    }
+    
+    &__img6{
+        background-image: url("");
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+    }
+    
+}

@@ -1,0 +1,16 @@
+.bootstrap{
+    &__carrousel{ /* carrousel */
+        margin: 1% 8% 1% 8%; /* le doy un margin de 1% para que no ocupe todo el ancho */
+        border-radius: 16px; /* borde redondo */
+        border: 3px solid $color_nav_footer; /* borde de color */
+    }
+    
+    &__img{ /* imagenes dentro del carrousel */
+        border-radius: 13px; /* borde redondo */
+    }
+    
+    &__arrow{/* hago mas grande las flechas de seleccion*/
+        width: 150px;
+        height: 150px; 
+    }
+}

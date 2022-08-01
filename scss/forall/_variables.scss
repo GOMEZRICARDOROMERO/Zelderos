@@ -1,0 +1,46 @@
+/* colores */
+$background_general: rgba(128, 128, 128, 0.342);/* color de fondo toda la pagina */
+$color_nav_footer: #1d1d1b; /* color navegacion y footer */
+
+
+/* map urls photos para juegos.html, para llamar se usa map-get($nombremap,nombrekey)*/
+$urls:(
+    skyward_sword: "https://zizihub.com/3a8f90.jpg",
+    minish_cap: "https://zizihub.com/1cbe94.jpg",
+    four_swords: "https://zizihub.com/0f5243.jpg",
+    ocarine_of_time: "https://zizihub.com/eb6034.jpg",
+    majoras_mask: "https://zizihub.com/c66b98.jpg",
+    twilight_princess: "https://zizihub.com/c52b67.jpg",
+    four_swords_adventures: "https://zizihub.com/07d846.jpg",
+    wind_waker: "https://zizihub.com/f89268.jpg",
+    phantom_hourglass: "https://zizihub.com/eeb981.jpg",
+    spirit_tracks: "https://zizihub.com/d6ae42.jpg",
+    a_link_to_the_past: "https://zizihub.com/7dec12.jpg",
+    oracle_of_season: "https://zizihub.com/0cfb1.jpg",
+    oracle_of_ages: "https://zizihub.com/d29335.jpg",
+    links_awakening: "https://zizihub.com/555c39.jpg",
+    a_link_between_worlds: "https://zizihub.com/053983.jpg",
+    tri_force_heroes: "https://zizihub.com/94ba25.jpg",
+    the_legend_of_zelda: "https://zizihub.com/376020.jpg",
+    adventure_of_link: "https://zizihub.com/908a22.jpg",
+    breath_of_the_wild: "https://zizihub.com/5dea7.jpg",
+);
+
+/* map urls photos para mangas.html */
+$urlsmangas:(
+
+);
+
+/* mixin para todo el contenido de la imagen en juegos.html*/
+@mixin imgcontenido ($url) { /* es como una funcion que recibe una variable en este caso la url */
+    background-image: url($url); /* paso la url de la imagen desde el map */
+    background-repeat: no-repeat; /* hago que la imagen no se repita */
+    background-size: 100% 100%; /* la imagen se ajusta al 100% del tamaño del div */
+}
+
+/* mixin para todo el contenido de la imagen en mangas.html */
+@mixin mangaxontenido ($url) {
+    background-image: url(url);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+}

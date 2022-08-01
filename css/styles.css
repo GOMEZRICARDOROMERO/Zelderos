@@ -1,6 +1,12 @@
 @charset "UTF-8";
+/* lo que va en todas las paginas, las variables siempre de primero*/
+/* colores */
 /* color de fondo toda la pagina */
 /* color navegacion y footer */
+/* map urls photos para juegos.html, para llamar se usa map-get($nombremap,nombrekey)*/
+/* map urls photos para mangas.html */
+/* mixin para todo el contenido de la imagen en juegos.html*/
+/* mixin para todo el contenido de la imagen en mangas.html */
 * {
   /* reseteo de css para elimiar los bordes */
   margin: 0px;
@@ -8,7 +14,6 @@
   box-sizing: border-box;
   /* con esta propiedad hago que las cajas conserven su tamaño si se les da un padding o border */ }
 
-/* -----------------------------General todas las paginas--------------------------------------- */
 body {
   background-color: rgba(128, 128, 128, 0.342);
   /* color de fondo principal */ }
@@ -122,13 +127,14 @@ body {
 footer {
   background-color: #1d1d1b;
   /* color de fondo del footer */
-  padding-top: 2%;
+  padding-top: 5%;
   /* borde interno de top */
   padding-bottom: 3%;
   /* borde interno de bot */
   margin-top: 5%;
   /* separo siempre 1% el footer del contenido de arriba */
-  margin-bottom: 0%; }
+  margin-bottom: 0%;
+  height: 50vh; }
   footer .footer__bootstrap {
     font-size: large;
     color: white;
@@ -141,8 +147,7 @@ footer {
     text-align: center;
     /* centro el texto */ }
 
-/* -----------------------------General todas las paginas--------------------------------------- */
-/* -----------------------------------------Index----------------------------------------------- */
+/* paginas */
 .bootstrap__carrousel {
   /* carrousel */
   margin: 1% 8% 1% 8%;
@@ -162,8 +167,6 @@ footer {
   width: 150px;
   height: 150px; }
 
-/* -----------------------------------------Index----------------------------------------------- */
-/* -----------------------------------------Juegos---------------------------------------------- */
 .imagenes {
   display: flex;
   /* paso toda la section de imagenes a felx */
@@ -212,105 +215,176 @@ footer {
     /* separo en todos los lados 1% */ }
   .imagenes__img1 {
     /* imagen que va dentro de imagenes__cuadro Skyward Sword*/
+    /* es como una funcion que recibe una variable en este caso la url */
     background-image: url("https://zizihub.com/3a8f90.jpg");
-    /* paso la url de la imagen */
+    /* paso la url de la imagen desde el map */
     background-repeat: no-repeat;
     /* hago que la imagen no se repita */
     background-size: 100% 100%;
     /* la imagen se ajusta al 100% del tamaño del div */ }
   .imagenes__img2 {
     /* Minish Cap */
+    /* es como una funcion que recibe una variable en este caso la url */
     background-image: url("https://zizihub.com/1cbe94.jpg");
+    /* paso la url de la imagen desde el map */
     background-repeat: no-repeat;
-    background-size: 100% 100%; }
+    /* hago que la imagen no se repita */
+    background-size: 100% 100%;
+    /* la imagen se ajusta al 100% del tamaño del div */ }
   .imagenes__img3 {
     /* Four Swords */
+    /* es como una funcion que recibe una variable en este caso la url */
     background-image: url("https://zizihub.com/0f5243.jpg");
+    /* paso la url de la imagen desde el map */
     background-repeat: no-repeat;
-    background-size: 100% 100%; }
+    /* hago que la imagen no se repita */
+    background-size: 100% 100%;
+    /* la imagen se ajusta al 100% del tamaño del div */ }
   .imagenes__img4 {
     /* Ocarine of Time */
+    /* es como una funcion que recibe una variable en este caso la url */
     background-image: url("https://zizihub.com/eb6034.jpg");
+    /* paso la url de la imagen desde el map */
     background-repeat: no-repeat;
-    background-size: 100% 100%; }
+    /* hago que la imagen no se repita */
+    background-size: 100% 100%;
+    /* la imagen se ajusta al 100% del tamaño del div */ }
   .imagenes__img5 {
     /* Majora's Mask */
+    /* es como una funcion que recibe una variable en este caso la url */
     background-image: url("https://zizihub.com/c66b98.jpg");
+    /* paso la url de la imagen desde el map */
     background-repeat: no-repeat;
-    background-size: 100% 100%; }
+    /* hago que la imagen no se repita */
+    background-size: 100% 100%;
+    /* la imagen se ajusta al 100% del tamaño del div */ }
   .imagenes__img6 {
     /* Twilight Princess */
+    /* es como una funcion que recibe una variable en este caso la url */
     background-image: url("https://zizihub.com/c52b67.jpg");
+    /* paso la url de la imagen desde el map */
     background-repeat: no-repeat;
-    background-size: 100% 100%; }
+    /* hago que la imagen no se repita */
+    background-size: 100% 100%;
+    /* la imagen se ajusta al 100% del tamaño del div */ }
   .imagenes__img7 {
     /*Four Swords Adventures */
+    /* es como una funcion que recibe una variable en este caso la url */
     background-image: url("https://zizihub.com/07d846.jpg");
+    /* paso la url de la imagen desde el map */
     background-repeat: no-repeat;
-    background-size: 100% 100%; }
+    /* hago que la imagen no se repita */
+    background-size: 100% 100%;
+    /* la imagen se ajusta al 100% del tamaño del div */ }
   .imagenes__img8 {
     /* The Wind Waker */
+    /* es como una funcion que recibe una variable en este caso la url */
     background-image: url("https://zizihub.com/f89268.jpg");
+    /* paso la url de la imagen desde el map */
     background-repeat: no-repeat;
-    background-size: 100% 100%; }
+    /* hago que la imagen no se repita */
+    background-size: 100% 100%;
+    /* la imagen se ajusta al 100% del tamaño del div */ }
   .imagenes__img9 {
     /* The Phantom Hourglass */
+    /* es como una funcion que recibe una variable en este caso la url */
     background-image: url("https://zizihub.com/eeb981.jpg");
+    /* paso la url de la imagen desde el map */
     background-repeat: no-repeat;
-    background-size: 100% 100%; }
+    /* hago que la imagen no se repita */
+    background-size: 100% 100%;
+    /* la imagen se ajusta al 100% del tamaño del div */ }
   .imagenes__img10 {
     /* Spirit Tracks */
+    /* es como una funcion que recibe una variable en este caso la url */
     background-image: url("https://zizihub.com/d6ae42.jpg");
+    /* paso la url de la imagen desde el map */
     background-repeat: no-repeat;
-    background-size: 100% 100%; }
+    /* hago que la imagen no se repita */
+    background-size: 100% 100%;
+    /* la imagen se ajusta al 100% del tamaño del div */ }
   .imagenes__img11 {
     /* A Link to the Past */
+    /* es como una funcion que recibe una variable en este caso la url */
     background-image: url("https://zizihub.com/7dec12.jpg");
+    /* paso la url de la imagen desde el map */
     background-repeat: no-repeat;
-    background-size: 100% 100%; }
+    /* hago que la imagen no se repita */
+    background-size: 100% 100%;
+    /* la imagen se ajusta al 100% del tamaño del div */ }
   .imagenes__img12 {
     /* Oracle of Season */
+    /* es como una funcion que recibe una variable en este caso la url */
     background-image: url("https://zizihub.com/0cfb1.jpg");
+    /* paso la url de la imagen desde el map */
     background-repeat: no-repeat;
-    background-size: 100% 100%; }
+    /* hago que la imagen no se repita */
+    background-size: 100% 100%;
+    /* la imagen se ajusta al 100% del tamaño del div */ }
   .imagenes__img13 {
     /* Oracle of Ages */
+    /* es como una funcion que recibe una variable en este caso la url */
     background-image: url("https://zizihub.com/d29335.jpg");
+    /* paso la url de la imagen desde el map */
     background-repeat: no-repeat;
-    background-size: 100% 100%; }
+    /* hago que la imagen no se repita */
+    background-size: 100% 100%;
+    /* la imagen se ajusta al 100% del tamaño del div */ }
   .imagenes__img14 {
     /* Link's Awakening */
+    /* es como una funcion que recibe una variable en este caso la url */
     background-image: url("https://zizihub.com/555c39.jpg");
+    /* paso la url de la imagen desde el map */
     background-repeat: no-repeat;
-    background-size: 100% 100%; }
+    /* hago que la imagen no se repita */
+    background-size: 100% 100%;
+    /* la imagen se ajusta al 100% del tamaño del div */ }
   .imagenes__img15 {
     /* A Link Between Worlds */
+    /* es como una funcion que recibe una variable en este caso la url */
     background-image: url("https://zizihub.com/053983.jpg");
+    /* paso la url de la imagen desde el map */
     background-repeat: no-repeat;
-    background-size: 100% 100%; }
+    /* hago que la imagen no se repita */
+    background-size: 100% 100%;
+    /* la imagen se ajusta al 100% del tamaño del div */ }
   .imagenes__img16 {
     /* Tri-Force Heroes */
+    /* es como una funcion que recibe una variable en este caso la url */
     background-image: url("https://zizihub.com/94ba25.jpg");
+    /* paso la url de la imagen desde el map */
     background-repeat: no-repeat;
-    background-size: 100% 100%; }
+    /* hago que la imagen no se repita */
+    background-size: 100% 100%;
+    /* la imagen se ajusta al 100% del tamaño del div */ }
   .imagenes__img17 {
     /* The Legend of Zelda */
+    /* es como una funcion que recibe una variable en este caso la url */
     background-image: url("https://zizihub.com/376020.jpg");
+    /* paso la url de la imagen desde el map */
     background-repeat: no-repeat;
-    background-size: 100% 100%; }
+    /* hago que la imagen no se repita */
+    background-size: 100% 100%;
+    /* la imagen se ajusta al 100% del tamaño del div */ }
   .imagenes__img18 {
     /* Adventure of Link */
+    /* es como una funcion que recibe una variable en este caso la url */
     background-image: url("https://zizihub.com/908a22.jpg");
+    /* paso la url de la imagen desde el map */
     background-repeat: no-repeat;
-    background-size: 100% 100%; }
+    /* hago que la imagen no se repita */
+    background-size: 100% 100%;
+    /* la imagen se ajusta al 100% del tamaño del div */ }
   .imagenes__img19 {
     /* Breath of the Wild */
+    /* es como una funcion que recibe una variable en este caso la url */
     background-image: url("https://zizihub.com/5dea7.jpg");
+    /* paso la url de la imagen desde el map */
     background-repeat: no-repeat;
-    background-size: 100% 100%; }
+    /* hago que la imagen no se repita */
+    background-size: 100% 100%;
+    /* la imagen se ajusta al 100% del tamaño del div */ }
 
-/* -----------------------------------------Juegos---------------------------------------------- */
-/* -----------------------------------------Manga----------------------------------------------- */
 .mangas {
   display: grid;
   /* agrego el grid */
@@ -402,18 +476,21 @@ footer {
     background-repeat: no-repeat;
     background-size: 100% 100%; }
 
-/* -----------------------------------------Manga----------------------------------------------- */
-/* -----------------------------------------Media----------------------------------------------- */
-.iframes iframe {
-  margin: 10px;
+.contenedor {
+  display: flex;
+  /* paso toda la section de imagenes a felx */
+  justify-content: space-around;
+  /* ajusto el contenido con espacios iguales entre ellos*/
+  flex-wrap: wrap; }
+
+.iframes {
+  margin: 50px 15px 15px 15px;
   /* separo los iframes entre si x10px */
   border-radius: 16px;
   /* borde redondo */
-  border: 3px solid #11834a;
+  border: 3px solid #1d1d1b;
   /* borde de color */ }
 
-/* -----------------------------------------Media----------------------------------------------- */
-/* -----------------------------------------Contacto-------------------------------------------- */
 .formulario {
   display: flex;
   justify-content: center;
@@ -460,7 +537,7 @@ footer {
     /* hago escala a 1.10 de su tamaño original */
     transition: all 0.1s; }
 
-/* -----------------------------------------Contacto--------------------------------------------- */
+/* queries recomendable siempre al final */
 /* -----------------------------------Media Queries mobile---------------------------------------- */
 /* en los media se agrega todas las propiedades que se van a cambiar */
 @media (min-width: 320px) and (max-width: 575px) {

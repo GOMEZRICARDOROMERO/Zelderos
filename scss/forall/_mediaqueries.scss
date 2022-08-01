@@ -1,0 +1,155 @@
+/* -----------------------------------Media Queries mobile---------------------------------------- */
+
+/* en los media se agrega todas las propiedades que se van a cambiar */
+
+@media (min-width: 320px) and (max-width: 575px){
+    /*---------------------nav----------------- */
+    
+    .header{
+        &__links  {
+            flex-direction: column;
+            padding: 1%;
+            width: 100%;
+            
+            & li{
+                list-style: none;
+                padding-top: 1%;
+                padding-bottom: 1%; 
+            }
+            
+            & a{
+                text-decoration: none;  
+                font-size: larger; 
+            }
+            
+            & p{
+                font-size: 250%; 
+                color: white; 
+                
+            }
+        }
+        
+        &__menu{
+            margin-left: 0%; 
+        }
+        
+        &__logoimg{
+            margin-left: 5%;
+            margin-right: 0%;
+            
+        }
+        
+        &__p{
+            font-size: 170%; /* tamaño unico para zelderos */
+        }
+        
+        &__logo--bootstrap{
+            width: 17%; 
+            margin: 0 0 0 0; 
+        }
+    }
+    
+    .titulo_pagina{
+        margin-top: 10%;
+    }
+    
+    /*---------------------nav----------------- */
+    
+    /*-------------------index----------------- */
+    .bootstrap{
+        &__carrousel{ /* carrousel */
+            height: 270px;
+            margin: 15% 1% 1% 1%; /* le doy un margin de 1% para que no ocupe todo el ancho */
+        }
+        
+        &__img{ /* imagenes dentro del carrousel */
+            height: 264px;
+        }
+    }
+    
+    /*-------------------index----------------- */
+    
+    /*-------------------mangas---------------- */
+    .mangas{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas:"manga1" 
+                            "manga2" 
+                            "manga3" 
+                            "manga4"
+                            "manga5" 
+                            "manga6";
+        row-gap: 0.5%;
+        margin: 0 0 25% 0;
+        
+        &__card{ 
+            width: 98%; 
+        }
+    }
+    
+    /*-------------------mangas---------------- */
+    
+    /*-------------------footer---------------- */
+    footer{
+        margin-top: 30%; 
+    }
+    /*-------------------footer---------------- */
+}
+
+/* -----------------------------------Media Queries mobile---------------------------------------- */
+
+/* -----------------------------------Media Queries tablet---------------------------------------- */
+@media (min-width: 576px) and (max-width: 992px){
+    /*---------------------nav----------------- */
+    .header__links p{
+        font-size: 200%; 
+        color: white; 
+    }
+    
+    .titulo_pagina{
+        margin-top: 10%;
+    }
+    
+    /*---------------------nav----------------- */
+    
+    /*-------------------index----------------- */
+    .bootstrap{
+        &__carrousel{ /* carrousel */
+            height: 300px;
+            margin: 15% 1% 1% 1%; /* le doy un margin de 1% para que no ocupe todo el ancho */
+        }
+        
+        &__img{ /* imagenes dentro del carrousel */
+            height: 294.5px;
+        }
+    }
+    
+    /*-------------------index----------------- */
+    
+    /*-------------------mangas---------------- */
+    .mangas{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas:"manga1" 
+                            "manga2" 
+                            "manga3" 
+                            "manga4"
+                            "manga5" 
+                            "manga6";
+        row-gap: 0.5%;
+        margin: 0 0 15% 0;
+        
+        &__card{ 
+            width: 98%; 
+        }
+    }
+    
+    /*-------------------mangas---------------- */
+    
+    /*-------------------footer---------------- */
+    footer{
+        margin-top: 30%; 
+    }
+    /*-------------------footer---------------- */
+}
+/* -----------------------------------Media Queries tablet---------------------------------------- */

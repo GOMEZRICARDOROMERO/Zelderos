@@ -1,0 +1,5 @@
+*{/* reseteo de css para elimiar los bordes */
+	margin: 0px;
+	padding: 0px;
+    box-sizing: border-box; /* con esta propiedad hago que las cajas conserven su tamaño si se les da un padding o border */
+}

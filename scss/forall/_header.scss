@@ -1,0 +1,98 @@
+.header{
+    &__bootstrap{
+        background-color: $color_nav_footer; /* color de fondo de toda la barra de navegacion */
+        padding: 1%; /* hago un padding general de 1%  */
+    }
+    
+    &__logoimg{
+        margin-left: 23%;
+        margin-right: 4%;
+    }
+    
+    &__p{
+        font-size: 250%; /* tamaño unico para zelderos */
+        color: white; /* le doy color al texto */
+    }
+    
+    &__logo--bootstrap{
+        width: 20%; /* lo separo del titulo zelderos */
+        margin: 0 0 0 1px; /* ancho de su tamaño original*/
+    }
+    
+    &__links  {
+        background-color: $color_nav_footer; /* color de fondo de toda la barra de navegacion */
+        display: flex; /* lo paso a flexbox */
+        align-items: center; /* alineo en flexbox */
+        justify-content: center; /* centro el contenido en flexbox */
+        padding: 1%; /* hago un padding general de 1%  */
+        
+        & li{
+            list-style: none; /* retiro los puntos de decoracion de cada li*/
+            
+            a{
+                color: #63635e; 
+                text-decoration: none; /* retito el estilo de link "color y subraya" */
+                font-size: larger; /* tamaño texto */
+            }
+            
+            .active{
+                color: white
+            }
+            
+            .activehm::after{ /* mantengo activa la linea de abajo en los links */
+                content: " ";
+                display: block;
+                width: 52px;
+                height: 6px;
+                position: absolute;
+                border-bottom: 3px solid white;
+            }
+            
+            .activejuma::after{
+                content: " ";
+                display: block;
+                width: 60px;
+                height: 6px;
+                position: absolute;
+                border-bottom: 3px solid white;
+            }
+            
+            .activec::after{
+                content: " ";
+                display: block;
+                width: 80px;
+                height: 6px;
+                position: absolute;
+                border-bottom: 3px solid white;
+            }
+        }
+    }
+    
+    &__menu--bootstrap{
+        margin: 0 0 0 9.5%; /* separo en 2% solo los li del menu "home, juegos, manga y media */
+        
+        &:hover{ /* animacion de zoom a la letra */
+            transform: scale(1.10,1.10);
+            transition: all 0.05s;
+        }
+        
+        & a:hover{/* hago que se pongo la letra en blanco cuando se pasa el cursor */
+            color: white;
+        }
+        
+        & a::before{ /* hago una liea abajo de los links */
+            content: " "; /* siempre debe tener un content */
+            width: 0%; /* dejo en 0 para que no se vea */
+            border-bottom: 3px solid white; /* el borde abajo reprsenta a linea */
+        }
+        
+        & a:hover::before{ /* animo la linea al pasar el cursor*/
+            content: " ";
+            width: 100%; /* ocupara el 100% de largo */
+            position: absolute;
+            top: 32px;
+            border-bottom: 3px solid white;
+            transition: all 0.5s;
+        }
+    }
+}

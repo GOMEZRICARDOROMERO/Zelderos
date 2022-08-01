@@ -1,0 +1,42 @@
+.formulario{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    &__contenedor{
+        padding: 10px; /* relleno de 10px */
+        background-color: $color_nav_footer;
+        width: 310px;  /* ancho */
+        height: 450px; /* alto */
+        border-radius: 16px; /* borde redondo */
+        border: 3px solid rgb(17, 131, 74); /* borde de color */
+        margin: 5% auto; /* centro */
+        color: white; /* color del texto */
+        font-size: larger; /* tamaño texto */
+        
+        & div{
+            margin: 8px 0px;
+        }
+    }
+    
+    &__texarea {
+        resize: none; /* impido que el usuario extienda el textarea */
+        width: 100% /* ocupa el 100% de ancho */
+    }
+    
+    &__input{
+        width: 100%; /* dejo que use el 100% del ancho */
+    }
+    
+    &__boton{
+        width: 47%;  /* le doy un tamaño de 50% */
+        display: block; /* paso a bloque para centrar */
+        margin: 4% auto; /* centro */
+        border-radius: 5px; /* redondeo un poco */
+    }
+    
+    &__boton:hover{ /* aplico un tranform y trnsition a los botones del form */
+        transform: scale(1.10,1.10);/* hago escala a 1.10 de su tamaño original */
+        transition: all 0.1s;
+    }
+}

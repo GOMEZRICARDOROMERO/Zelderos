@@ -1,0 +1,11 @@
+.contenedor{
+    display: flex; /* paso toda la section de imagenes a felx */
+    justify-content: space-around; /* ajusto el contenido con espacios iguales entre ellos*/
+    flex-wrap: wrap;
+}
+
+.iframes{
+    margin: 50px 15px 15px 15px;/* separo los iframes entre si x10px */
+    border-radius: 16px; /* borde redondo */
+    border: 3px solid $color_nav_footer; /* borde de color */
+}

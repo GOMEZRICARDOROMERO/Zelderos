@@ -1,0 +1,109 @@
+.imagenes{
+    display: flex; /* paso toda la section de imagenes a felx */
+    justify-content: space-around; /* ajusto el contenido con espacios iguales entre ellos*/
+    flex-wrap: wrap; /* dejo fluir en varias lineas los divs dependiendo el ancho de la pantalla */
+    
+    h2{ /* titulo dentro de la tarjeta */
+        text-align: center; /* centro el titulo del juego */
+        margin-bottom: 2%; /* separo un 2 el titulo del texto */
+    }
+    
+    &__card{ /* es el diseño de la tarjeta */
+        display: flex; /* paso todos los articulos a flex */
+        flex-direction: column; /* los paso a vertical */
+        width: 400px; /* ancho */
+        height: 450px; /* alto */
+        border-radius: 16px; /* borde redondo */
+        border: 3px solid $color_nav_footer; /* borde de color */
+        margin: 1%;
+    }
+    
+    &__cuadro{ /* es el tamaño que se va usar para la imagen */
+        width: 100%; /* ocupa el 100% de ancho */
+        height: 250px; /* 250px de alto */
+        border-top-left-radius:  13px 13px; /* hago redondo el borde arriba izquierda para coincidir con el de article */
+        border-top-right-radius: 13px 13px; /* hago redondo el borde arriba derecha para coincidir con el de article */
+    }
+    
+    &__textos{ /* son los textos dentro de la tarjeta */
+        text-align: justify; /* centro el texto */
+        line-height: 1.2;/* separo los renglones */
+        margin: 3%; /* separo en todos los lados 1% */
+    }
+    
+    &__img1{ /* imagen que va dentro de imagenes__cuadro Skyward Sword*/
+        @include imgcontenido(map-get($urls,skyward_sword))
+    }
+    
+    &__img2{/* Minish Cap */
+        @include imgcontenido(map-get($urls,minish_cap))
+    }
+    
+    &__img3{/* Four Swords */
+        @include imgcontenido(map-get($urls,four_swords))
+    }
+    
+    &__img4{/* Ocarine of Time */
+        @include imgcontenido(map-get($urls,ocarine_of_time))
+    }
+    
+    &__img5{/* Majora's Mask */
+        @include imgcontenido(map-get($urls,majoras_mask))
+    }
+    
+    &__img6{/* Twilight Princess */
+        @include imgcontenido(map-get($urls,twilight_princess))
+    }
+    
+    &__img7{/*Four Swords Adventures */
+        @include imgcontenido(map-get($urls,four_swords_adventures))
+    }
+    
+    &__img8{/* The Wind Waker */
+        @include imgcontenido(map-get($urls,wind_waker))
+    }
+    
+    &__img9{/* The Phantom Hourglass */
+        @include imgcontenido(map-get($urls,phantom_hourglass))
+    }
+    
+    &__img10{/* Spirit Tracks */
+        @include imgcontenido(map-get($urls,spirit_tracks))
+    }
+    
+    &__img11{/* A Link to the Past */
+        @include imgcontenido(map-get($urls,a_link_to_the_past))
+    }
+    
+    &__img12{/* Oracle of Season */
+        @include imgcontenido(map-get($urls,oracle_of_season))
+    }
+    
+    &__img13{/* Oracle of Ages */
+        @include imgcontenido(map-get($urls,oracle_of_ages))
+    }
+    
+    &__img14{/* Link's Awakening */
+        @include imgcontenido(map-get($urls,links_awakening))
+    }
+    
+    &__img15{/* A Link Between Worlds */
+        @include imgcontenido(map-get($urls,a_link_between_worlds))
+    }
+    
+    &__img16{/* Tri-Force Heroes */
+        @include imgcontenido(map-get($urls,tri_force_heroes))
+    }
+    
+    &__img17{/* The Legend of Zelda */
+        @include imgcontenido(map-get($urls,the_legend_of_zelda))
+    }
+    
+    &__img18{/* Adventure of Link */
+        @include imgcontenido(map-get($urls,adventure_of_link))
+    }
+    
+    &__img19{/* Breath of the Wild */
+        @include imgcontenido(map-get($urls,breath_of_the_wild))
+    }
+}
