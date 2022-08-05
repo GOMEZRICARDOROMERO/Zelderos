@@ -28,7 +28,12 @@ $urls:(
 
 /* map urls photos para mangas.html */
 $urlsmangas:(
-
+    a_link_to_the_past_manga: "https://zizihub.com/d9d960.jpg",
+    ocarine_of_time_manga: "https://zizihub.com/7aa950.jpg",
+    majoras_mask_manga: "https://zizihub.com/d62580.jpg",
+    minish_cap_manga: "https://zizihub.com/6c6d58.jpg",
+    oracle_manga: "https://zizihub.com/146143.jpg",
+    four_swords_adventures_manga:"https://zizihub.com/e28b79.jpg",
 );
 
 /* mixin para todo el contenido de la imagen en juegos.html*/
@@ -39,8 +44,8 @@ $urlsmangas:(
 }
 
 /* mixin para todo el contenido de la imagen en mangas.html */
-@mixin mangaxontenido ($url) {
-    background-image: url(url);
-        background-repeat: no-repeat;
-        background-size: 100% 100%;
+@mixin mangacontenido ($url) {
+    background-image: url($url);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
 }

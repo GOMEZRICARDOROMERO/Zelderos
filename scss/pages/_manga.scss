@@ -56,45 +56,33 @@
     
     &__textos{ /* son los textos dentro de la tarjeta */
         width: 50%; /* ocupa el 50% de ancho de la card */
-        text-align: justify; /* centro el texto */
-        line-height: 1.2;/* separo los renglones */
+        text-align: left; /* centro el texto */
+        line-height: 1.3;/* separo los renglones */
         margin: 3%; /* separo en todos los lados 1% */
     }
     
     &__img1{
-        background-image: url("https://www.normaeditorial.com/upload/media/albumes/0001/06/a6fe1c73bab320c08220271140f955d7ac719d33.jpeg");
-        background-repeat: no-repeat;
-        background-size: 100% 100%;
+        @include mangacontenido(map-get($urlsmangas,a_link_to_the_past_manga))
     }
     
     &__img2{
-        background-image: url("https://cdn.normacomics.com/media/catalog/product/cache/1/image/588x473/9df78eab33525d08d6e5fb8d27136e95/l/e/legend_zelda_perfect_editio.jpg"); 
-        background-repeat: no-repeat;
-        background-size: 100% 100%;
+        @include mangacontenido(map-get($urlsmangas,ocarine_of_time_manga))
     }
     
     &__img3{
-        background-image: url("https://cdn.normacomics.com/media/catalog/product/cache/1/image/588x473/9df78eab33525d08d6e5fb8d27136e95/0/1/01237000101_g.jpg");
-        background-repeat: no-repeat;
-        background-size: 100% 100%;
+        @include mangacontenido(map-get($urlsmangas,majoras_mask_manga))
     }
     
     &__img4{
-        background-image: url("");
-        background-repeat: no-repeat;
-        background-size: 100% 100%;
+        @include mangacontenido(map-get($urlsmangas,minish_cap_manga))
     }
     
     &__img5{
-        background-image: url("");
-        background-repeat: no-repeat;
-        background-size: 100% 100%;
+        @include mangacontenido(map-get($urlsmangas,oracle_manga))
     }
     
     &__img6{
-        background-image: url("");
-        background-repeat: no-repeat;
-        background-size: 100% 100%;
+        @include mangacontenido(map-get($urlsmangas,four_swords_adventures_manga))
     }
     
 }
