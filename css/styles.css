@@ -113,7 +113,7 @@ body {
     border-bottom: 3px solid white;
     transition: all 0.5s; }
 
-.titulo_pagina {
+.titulo-pagina {
   /* titulo para todas las paginas */
   font-family: 'Ibarra Real Nova', serif;
   /* utilizo el font de google */
@@ -127,18 +127,17 @@ body {
 footer {
   background-color: #1d1d1b;
   /* color de fondo del footer */
-  padding-top: 5%;
+  padding-top: 4%;
   /* borde interno de top */
   padding-bottom: 3%;
   /* borde interno de bot */
-  margin-top: 5%;
+  margin-top: 6%;
   /* separo siempre 1% el footer del contenido de arriba */
-  margin-bottom: 0%;
-  height: 50vh; }
+  margin-bottom: 0%; }
   footer .footer__bootstrap {
     font-size: large;
     color: white;
-    margin-top: 2%; }
+    margin-top: 1%; }
   footer .footer__p {
     font-size: medium;
     /* le doy un tamaño pequeño */
@@ -428,7 +427,7 @@ footer {
     /* alto */
     border-radius: 16px;
     /* borde redondo */
-    border: 3px solid #11834a;
+    border: 3px solid #1d1d1b;
     /* borde de color */
     margin: 1%; }
   .mangas_cuadro {
@@ -478,7 +477,7 @@ footer {
 
 .contenedor {
   display: flex;
-  /* paso toda la section de imagenes a felx */
+  /* paso toda la section de media a felx */
   justify-content: space-around;
   /* ajusto el contenido con espacios iguales entre ellos*/
   flex-wrap: wrap; }
@@ -493,22 +492,22 @@ footer {
 
 .formulario {
   display: flex;
-  justify-content: center;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
+  justify-content: space-around;
   align-items: center; }
   .formulario__contenedor {
+    background-color: #1d1d1b;
     padding: 10px;
     /* relleno de 10px */
-    background-color: #1d1d1b;
-    width: 310px;
+    width: 400px;
     /* ancho */
-    height: 450px;
+    height: 420px;
     /* alto */
     border-radius: 16px;
     /* borde redondo */
     border: 3px solid #1d1d1b;
     /* borde de color */
-    margin: 5% auto;
-    /* centro */
     color: white;
     /* color del texto */
     font-size: larger;
@@ -521,13 +520,14 @@ footer {
     width: 100%; }
   .formulario__input {
     width: 100%;
-    /* dejo que use el 100% del ancho */ }
+    /* dejo que use el 100% del ancho */
+    border-radius: 5px; }
   .formulario__boton {
-    width: 47%;
+    width: 49.3%;
     /* le doy un tamaño de 50% */
-    display: block;
+    display: inline;
     /* paso a bloque para centrar */
-    margin: 4% auto;
+    margin: 2% auto;
     /* centro */
     border-radius: 5px;
     /* redondeo un poco */ }
@@ -536,6 +536,17 @@ footer {
     transform: scale(1.1, 1.1);
     /* hago escala a 1.10 de su tamaño original */
     transition: all 0.1s; }
+  .formulario__img-contenedor {
+    background-image: url("https://zizihub.com/618d92.png");
+    /* paso la url de la imagen desde el map */
+    background-repeat: no-repeat;
+    /* hago que la imagen no se repita */
+    background-size: 100% 100%;
+    width: 50%;
+    /* ancho */
+    height: 420px;
+    /* alto */
+    margin: 2%; }
 
 /* queries recomendable siempre al final */
 /* -----------------------------------Media Queries mobile---------------------------------------- */
@@ -567,8 +578,8 @@ footer {
   .header__logo--bootstrap {
     width: 17%;
     margin: 0 0 0 0; }
-  .titulo_pagina {
-    margin-top: 10%; }
+  .titulo-pagina {
+    margin-top: 5%; }
   /*---------------------nav----------------- */
   /*-------------------index----------------- */
   .bootstrap__carrousel {
@@ -586,13 +597,37 @@ footer {
     grid-template-rows: 1fr;
     grid-template-areas: "manga1"  "manga2"  "manga3"  "manga4" "manga5"  "manga6";
     row-gap: 0.5%;
-    margin: 0 0 25% 0; }
+    margin: 0 0 1% 0; }
     .mangas__card {
-      width: 98%; }
+      width: 96.5%; }
   /*-------------------mangas---------------- */
+  /*-------------------media----------------- */
+  .iframes {
+    margin: 40px 1px 0 1px;
+    /* separo los iframes entre si */ }
+  /*-------------------media----------------- */
+  /*-------------------contacto-------------- */
+  .formulario {
+    flex-direction: column;
+    justify-content: center; }
+    .formulario__contenedor {
+      background-color: #1d1d1b;
+      padding: 10px;
+      /* relleno de 10px */
+      width: 300px;
+      /* ancho */
+      height: 450px;
+      /* alto */
+      margin-top: 5%; }
+    .formulario__boton {
+      display: block;
+      /* paso a bloque para centrar */ }
+    .formulario__img-contenedor {
+      display: none; }
+  /*-------------------contacto--------------- */
   /*-------------------footer---------------- */
   footer {
-    margin-top: 30%; }
+    margin-top: 15%; }
   /*-------------------footer---------------- */ }
 
 /* -----------------------------------Media Queries mobile---------------------------------------- */
@@ -602,8 +637,8 @@ footer {
   .header__links p {
     font-size: 200%;
     color: white; }
-  .titulo_pagina {
-    margin-top: 10%; }
+  .titulo-pagina {
+    margin-top: 5%; }
   /*---------------------nav----------------- */
   /*-------------------index----------------- */
   .bootstrap__carrousel {
@@ -620,14 +655,37 @@ footer {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
     grid-template-areas: "manga1"  "manga2"  "manga3"  "manga4" "manga5"  "manga6";
-    row-gap: 0.5%;
-    margin: 0 0 15% 0; }
+    row-gap: 1%;
+    margin: 0 0 1% 0; }
     .mangas__card {
-      width: 98%; }
+      width: 95%; }
   /*-------------------mangas---------------- */
+  /*-------------------media----------------- */
+  .iframes {
+    margin: 40px 0 0 0;
+    /* separo los iframes entre si */ }
+  /*-------------------contacto-------------- */
+  .formulario {
+    flex-direction: column;
+    justify-content: center; }
+    .formulario__contenedor {
+      background-color: #1d1d1b;
+      padding: 10px;
+      /* relleno de 10px */
+      width: 400px;
+      /* ancho */
+      height: 420px;
+      /* alto */
+      margin-top: 5%; }
+    .formulario__boton {
+      display: inline;
+      /* paso a bloque para centrar */ }
+    .formulario__img-contenedor {
+      display: none; }
+  /*-------------------contacto--------------- */
   /*-------------------footer---------------- */
   footer {
-    margin-top: 30%; }
+    margin-top: 10%; }
   /*-------------------footer---------------- */ }
 
 /* -----------------------------------Media Queries tablet---------------------------------------- */

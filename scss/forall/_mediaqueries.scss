@@ -49,8 +49,8 @@
         }
     }
     
-    .titulo_pagina{
-        margin-top: 10%;
+    .titulo-pagina{
+        margin-top: 5%;
     }
     
     /*---------------------nav----------------- */
@@ -80,18 +80,48 @@
                             "manga5" 
                             "manga6";
         row-gap: 0.5%;
-        margin: 0 0 25% 0;
+        margin: 0 0 1% 0;
         
         &__card{ 
-            width: 98%; 
+            width: 96.5%; 
         }
     }
     
     /*-------------------mangas---------------- */
     
+    /*-------------------media----------------- */
+    .iframes{
+        margin: 40px 1px 0 1px;/* separo los iframes entre si */
+    }
+    
+    /*-------------------media----------------- */
+    
+    /*-------------------contacto-------------- */
+    .formulario{
+        flex-direction: column;
+        justify-content: center;
+        
+        &__contenedor{
+            background-color: $color_nav_footer;
+            padding: 10px; /* relleno de 10px */
+            width: 300px;  /* ancho */
+            height: 450px; /* alto */
+            margin-top: 5%;
+        }
+        
+        &__boton{
+            display: block; /* paso a bloque para centrar */
+        }
+        
+        &__img-contenedor{
+            display: none;
+        }
+    }
+    /*-------------------contacto--------------- */
+    
     /*-------------------footer---------------- */
     footer{
-        margin-top: 30%; 
+        margin-top: 15%; 
     }
     /*-------------------footer---------------- */
 }
@@ -106,8 +136,8 @@
         color: white; 
     }
     
-    .titulo_pagina{
-        margin-top: 10%;
+    .titulo-pagina{
+        margin-top: 5%;
     }
     
     /*---------------------nav----------------- */
@@ -136,19 +166,47 @@
                             "manga4"
                             "manga5" 
                             "manga6";
-        row-gap: 0.5%;
-        margin: 0 0 15% 0;
+        row-gap: 1%;
+        margin: 0 0 1% 0;
         
         &__card{ 
-            width: 98%; 
+            width: 95%; 
         }
     }
     
     /*-------------------mangas---------------- */
     
+    /*-------------------media----------------- */
+    .iframes{
+        margin: 40px 0 0 0;/* separo los iframes entre si */
+    }
+    
+    /*-------------------contacto-------------- */
+    .formulario{
+        flex-direction: column;
+        justify-content: center;
+        
+        &__contenedor{
+            background-color: $color_nav_footer;
+            padding: 10px; /* relleno de 10px */
+            width: 400px;  /* ancho */
+            height: 420px; /* alto */
+            margin-top: 5%;
+        }
+        
+        &__boton{
+            display: inline; /* paso a bloque para centrar */
+        }
+        
+        &__img-contenedor{
+            display: none;
+        }
+    }
+    /*-------------------contacto--------------- */
+    
     /*-------------------footer---------------- */
     footer{
-        margin-top: 30%; 
+        margin-top: 10%; 
     }
     /*-------------------footer---------------- */
 }

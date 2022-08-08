@@ -1,16 +1,17 @@
 .formulario{
     display: flex;
-    justify-content: center;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    justify-content: space-around;
     align-items: center;
     
     &__contenedor{
-        padding: 10px; /* relleno de 10px */
         background-color: $color_nav_footer;
-        width: 310px;  /* ancho */
-        height: 450px; /* alto */
+        padding: 10px; /* relleno de 10px */
+        width: 400px;  /* ancho */
+        height: 420px; /* alto */
         border-radius: 16px; /* borde redondo */
         border: 3px solid $color_nav_footer; /* borde de color */
-        margin: 5% auto; /* centro */
         color: white; /* color del texto */
         font-size: larger; /* tamaño texto */
         
@@ -26,12 +27,13 @@
     
     &__input{
         width: 100%; /* dejo que use el 100% del ancho */
+        border-radius: 5px;
     }
     
     &__boton{
-        width: 47%;  /* le doy un tamaño de 50% */
-        display: block; /* paso a bloque para centrar */
-        margin: 4% auto; /* centro */
+        width: 49.3%;  /* le doy un tamaño de 50% */
+        display: inline; /* paso a bloque para centrar */
+        margin: 2% auto; /* centro */
         border-radius: 5px; /* redondeo un poco */
     }
     
@@ -39,4 +41,14 @@
         transform: scale(1.10,1.10);/* hago escala a 1.10 de su tamaño original */
         transition: all 0.1s;
     }
+    
+    &__img-contenedor{
+        background-image: url("https://zizihub.com/618d92.png"); /* paso la url de la imagen desde el map */
+        background-repeat: no-repeat; /* hago que la imagen no se repita */
+        background-size: 100% 100%;
+        width: 50%;  /* ancho */
+        height: 420px; /* alto */
+        margin: 2%;
+    }
 }
+

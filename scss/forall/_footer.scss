@@ -1,16 +1,15 @@
 footer{
     background-color: $color_nav_footer; /* color de fondo del footer */
-    padding-top: 5%; /* borde interno de top */
+    padding-top: 4%; /* borde interno de top */
     padding-bottom: 3%; /* borde interno de bot */
-    margin-top: 5%; /* separo siempre 1% el footer del contenido de arriba */
+    margin-top: 6%; /* separo siempre 1% el footer del contenido de arriba */
     margin-bottom: 0%;
-    height: 50vh;
     
     .footer{
         &__bootstrap{
             font-size: large;
             color: white;
-            margin-top: 2%;
+            margin-top: 1%;
         }
     
         &__p{
