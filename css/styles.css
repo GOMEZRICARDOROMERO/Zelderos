@@ -591,6 +591,10 @@ footer {
     /* imagenes dentro del carrousel */
     height: 264px; }
   /*-------------------index----------------- */
+  /*-------------------games----------------- */
+  .imagenes__card {
+    margin-top: 10%; }
+  /*-------------------games----------------- */
   /*-------------------mangas---------------- */
   .mangas {
     grid-template-columns: 1fr;
@@ -599,7 +603,8 @@ footer {
     row-gap: 0.5%;
     margin: 0 0 1% 0; }
     .mangas__card {
-      width: 96.5%; }
+      width: 96.5%;
+      margin-bottom: 5%; }
   /*-------------------mangas---------------- */
   /*-------------------media----------------- */
   .iframes {
@@ -627,7 +632,7 @@ footer {
   /*-------------------contacto--------------- */
   /*-------------------footer---------------- */
   footer {
-    margin-top: 15%; }
+    margin-top: 20%; }
   /*-------------------footer---------------- */ }
 
 /* -----------------------------------Media Queries mobile---------------------------------------- */
@@ -650,6 +655,10 @@ footer {
     /* imagenes dentro del carrousel */
     height: 294.5px; }
   /*-------------------index----------------- */
+  /*-------------------games----------------- */
+  .imagenes__card {
+    margin-top: 10%; }
+  /*-------------------games----------------- */
   /*-------------------mangas---------------- */
   .mangas {
     grid-template-columns: 1fr;
@@ -658,11 +667,12 @@ footer {
     row-gap: 1%;
     margin: 0 0 1% 0; }
     .mangas__card {
-      width: 95%; }
+      width: 95%;
+      margin-bottom: 5%; }
   /*-------------------mangas---------------- */
   /*-------------------media----------------- */
   .iframes {
-    margin: 40px 0 0 0;
+    margin: 45px 0 0 0;
     /* separo los iframes entre si */ }
   /*-------------------contacto-------------- */
   .formulario {
@@ -685,7 +695,7 @@ footer {
   /*-------------------contacto--------------- */
   /*-------------------footer---------------- */
   footer {
-    margin-top: 10%; }
+    margin-top: 25%; }
   /*-------------------footer---------------- */ }
 
 /* -----------------------------------Media Queries tablet---------------------------------------- */
